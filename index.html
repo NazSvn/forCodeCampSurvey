@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">
+      <span>Survey</span>
+      <p id="description">
+        This short survey helps us understand your smartphone preferences.<br/>
+        Thanks for your time!
+      </p>
+    </h1>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+        required
+      />
+      <label id="email-label" for="email">Email Address</label
+      ><input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your e-Mail"
+        required
+      />
+      <label id="number-label" for="age"
+        >Age (To participate, you must be 16 years of age or older.) </label
+      ><input
+        type="number"
+        name="age"
+        id="number"
+        placeholder="How old are you?"
+        min="16"
+        max="99"
+        required
+      />
+      <fieldset>
+        <legend>Mobile phone brands</legend>
+        <label id="dropdown-label" for="dropdown"
+          ><p>What smartphone brand do you typically use?</p> </label
+        >
+        <select id="dropdown" name="dropdown">
+          <option value="">Select a Brand</option>
+          <option value="apple">Apple</option>
+          <option value="samsung">Samsung</option>
+          <option value="xiaomi">Xiaomi</option>
+          <option value="oppo">Oppo</option>
+          <option value="vivo">Vivo</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Operating systems</legend>
+        <label id="mobile-system-label" for="mobile-system"
+          ><p>Which mobile operating system do you find more user-friendly?</p> </label
+        >
+        <label id="mobile-system-label" for="mobile-system">
+          <input
+            type="radio"
+            id="mobile-system"
+            name="mobile-system"
+            value="android"
+            checked
+          />
+          Android</label
+        >
+
+        <label id="mobile-system-label" for="mobile-system">
+          <input
+            type="radio"
+            id="mobile-system"
+            name="mobile-system"
+            value="android"
+          />
+          iOS
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Important features
+        </legend>
+        <p>When considering a new smartphone, which features are most important
+          to you? (Select all that apply)
+        </legend></p>
+        <label for="camera-quality"
+          ><input
+            type="checkbox"
+            id="camera-quality"
+            name="features"
+            value="camera_quality"
+          />
+          Camera Quality</label
+        ><br />
+        <label for="battery-life"
+          ><input
+            type="checkbox"
+            id="battery-life"
+            name="features"
+            value="battery_life"
+          />
+          Battery Life</label
+        ><br />
+        <label for="processing-power"
+          ><input
+            type="checkbox"
+            id="processing-power"
+            name="features"
+            value="processing_power"
+          />
+          Processing Power</label
+        ><br />
+        <label for="screen-size"
+          ><input
+            type="checkbox"
+            id="screen-size"
+            name="features"
+            value="screen_size"
+          />
+          Screen Size</label
+        ><br />
+      </fieldset>
+      <label for="comments" id="comments-label">Additional Comments:</label>
+      <textarea
+        id="comments"
+        name="comments"
+        
+        placeholder="Let us know your thoughts..."
+      ></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>

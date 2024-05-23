@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    #3d52a0,
+    #7091e6,
+    #8697c4,
+    #adbbda,
+    #ede8f5
+  );
+  min-height: 100vh;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: hsla(224, 34%, 65%, 0.116);
+}
+
+h1 {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+#title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+#description {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #adbbda;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+#survey-form {
+  background-color: #ede8f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#name-label,
+#email-label,
+#number-label {
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+#name,
+#email,
+#number {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid hsla(0, 0%, 80%, 0.658);
+  border-radius: 3px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid hsla(0, 0%, 80%, 0.658);
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+#mobile-system-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+#comments-label {
+  display: block;
+  margin-bottom: 15px;
+}
+#comments {
+  display: flex;
+  width: 98%;
+  border: 1px solid hsla(0, 0%, 80%, 0.658);
+  border-radius: 3px;
+  min-height: 100px;
+  resize: vertical;
+}
+
+#submit {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  background: hsla(227, 45%, 43%, 0.623);
+  border: none;
+  border-radius: 3px;
+  margin: 5px auto;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  p {
+    text-align: justify;
+  }
+  #survey-form {
+    width: 90%;
+  }
+  #name,
+  #email,
+  #number,
+  select {
+    width: 94%;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+  #comments {
+    min-height: 80px;
+  }
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsla(0, 0%, 80%, 0.658);
+    border-radius: 3px;
+    font-size: 0.9rem;
+  }
+}
